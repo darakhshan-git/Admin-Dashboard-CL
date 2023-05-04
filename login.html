@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no">
+
+<title>CA Login</title>
+
+
+
+<!-- CSS FILES -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+
+</head>
+<body class="loginbody" style="background-image: url(images/login_full_bg.jpg);">
+
+
+<!-- section Start -->
+       <section class="sec-login">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-6">
+						<img src="images/c-logo.jpg" class="clogo" width="180" alt="">
+                                <div class="login-page bg-white shadow rounded p-4">
+								    <div class="border p-4 rounded">
+                                    <div class="text-center">
+                                        <h4 class="mb-4">Sign in</h4>
+                                        <p>Don't have an account yet?<a href="#">Sign up here</a></p>
+<a class="btn my-4 shadow-sm btn-white" href="#"> <span class="d-flex justify-content-center align-items-center">
+                          <img class="me-2 mr-2" src="images/google.svg" width="16" alt="Image Description">
+                          <span>Sign in with Google</span></span></a>
+						  
+						  <a href="javascript:;" class="btn btn-facebook"><i class="fa fa-facebook pr-2" aria-hidden="true"></i>Sign in with Facebook</a>
+
+<div class="login-separater text-center mb-4"> <span>OR SIGN IN WITH EMAIL</span>
+                                        <hr>
+                                    </div>
+										
+                                    </div>
+                                    <form class="login-form">
+                                        <div class="row">
+										
+                                            <div class="col-lg-12">
+                                                <div class="form-group position-relative">
+                                                    <label>Email Address</label>
+                                                    <input type="email" class="form-control" placeholder="Email Address" name="email" required="">
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-lg-12">
+                                                <div class="form-group position-relative">
+                                                    <label>Enter Password</label>
+                                                    <input type="password" class="form-control" placeholder="Password" required="">
+													<a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+											
+											<div class="col-lg-7 col-md-7 col-6">
+												<div class="form-group">
+                                                   <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+  <label class="form-check-label" for="flexSwitchCheckChecked">Remember Me</label>
+</div>
+
+                                                </div>
+												</div>
+
+                                            <div class="col-lg-5 col-md-5 col-6  fp">
+											<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Forgot Password?</button>
+											 </div>	
+											 
+												<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+   
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    
+
+    <div class="container">
+	<div class="row">
+	<div class="col-lg-8 col-md-8 col-8"><p>Change Password</p></div>
+	
+	<div class="col-lg-4 col-md-4 col-4"><a href="#">Resend OTP</a></div>
+	
+	<div class="col-lg-12">
+		<div class="form-group">
+             <input type="text" placeholder="Type New Password" name="ph" required="">
+            </div>
+		</div>
+		
+		<div class="col-lg-12">
+		<div class="form-group">
+             <input type="text" placeholder="Retype New Password" name="ph" required="">
+            </div>
+		</div>
+     
+
+    <div class="col-lg-12">
+      <button type="submit">Retrieve Password</button>
+      </div>
+	  </div>
+    </div>
+
+   
+  </form>
+</div>
+                                                
+                                           
+											
+                                            <div class="col-lg-12 mb-0">
+                                                <button class="btn btn-primary an-btn w-100"><i class="fa fa-unlock-alt pr-2" aria-hidden="true"></i>Sign in</button>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </form>
+									</div>
+                                </div>
+                            </div> 
+                        </div><!--end row-->
+                    </div> <!--end container-->
+               
+        </section>
+        <!-- section End -->
+
+
+
+
+
+
+
+
+
+<!-- JS FILES -->
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/scripts.js"></script>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
